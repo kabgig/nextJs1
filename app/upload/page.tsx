@@ -14,6 +14,9 @@ const UploadPage = () => {
         <CldImage src={publicId} width={270} height={180} alt="blablabla" />
       )}
       <CldUploadWidget
+        options={{
+          sources: ["local", "url"],
+        }}
         uploadPreset="wizqrgk8"
         onSuccess={(result, widget) => {
           // if (result.event !== "success") {
